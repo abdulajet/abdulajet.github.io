@@ -50,3 +50,25 @@ h3 {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+
+.item-zoom-subtle:hover img {
+  position: relative;
+	-moz-transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 10px;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  flex-basis: content;
+}
