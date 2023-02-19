@@ -2,9 +2,9 @@ function getImages() {
     const params = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
     });
-    const filmStock = params.stock;
+    const tags = params.stock;
 
-    fetch(`https://filmboi.fly.dev/?stock=${filmStock}`)
+    fetch(`https://filmboi.fly.dev/?tags=${tags}`)
         .then((response) => response.json())
         .then((images) => {
 
