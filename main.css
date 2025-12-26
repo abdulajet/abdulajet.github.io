@@ -67,10 +67,43 @@ h3 {
   gap: 10px;
   row-gap: 10px;
   flex-direction: row;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .flex-container > div {
   flex-basis: content;
+  max-width: 100%;
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .flex-container img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flex-container {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .flex-container img {
+    max-height: 300px;
+  }
 }
 
 .center {
