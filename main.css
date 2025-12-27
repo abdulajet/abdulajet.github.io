@@ -133,23 +133,23 @@ h3 {
     margin: 0 auto;
   }
 
-  h1 {
+  .center h1 {
     font-size: 250%;
   }
 
-  h2 {
+  .center h2 {
     font-size: 150%;
     margin: 15px 0;
   }
 
-  a {
+  .center a {
     display: inline-block;
     padding: 5px 8px;
     margin: 3px 2px;
     line-height: 1.5;
   }
 
-  hr {
+  .center hr {
     margin: 10px 0;
   }
 }
@@ -159,15 +159,15 @@ h3 {
     padding: 15px 10px;
   }
 
-  h1 {
+  .center h1 {
     font-size: 200%;
   }
 
-  h2 {
+  .center h2 {
     font-size: 130%;
   }
 
-  a {
+  .center a {
     padding: 8px 10px;
     margin: 5px 3px;
     font-size: 14px;
