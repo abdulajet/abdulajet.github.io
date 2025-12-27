@@ -14,7 +14,9 @@ function getImages() {
             div.className = "item-zoom-subtle";
 
             let imageElement = document.createElement('img');
-            let url = image.url.replace("upload/", "upload/w_500,h_300,c_fill/");
+            // Use c_limit to preserve aspect ratio for both landscape and portrait
+            // Max width 500px on desktop, images will scale down responsively with CSS
+            let url = image.url.replace("upload/", "upload/w_500,c_limit,q_auto,f_auto/");
             imageElement.src = url;
             imageElement.loading = "lazy";
 
